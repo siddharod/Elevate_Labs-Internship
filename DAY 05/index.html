@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Instagram Login</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="page-container">
+
+        <section class="login-wrapper">
+
+            <div class="login-card">
+
+                <div class="logo">
+                    Instagram
+                </div>
+
+                <form id="loginForm" novalidate>
+
+                    <div class="input-group">
+                        <input
+                            type="text"
+                            id="username"
+                            placeholder="Phone number, username, or email"
+                            autocomplete="username"
+                        >
+                        <span class="error-message" id="usernameError"></span>
+                    </div>
+
+                    <div class="input-group password-group">
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Password"
+                            autocomplete="current-password"
+                        >
+
+                        <button
+                            type="button"
+                            class="show-password"
+                            id="togglePassword"
+                        >
+                            Show
+                        </button>
+
+                        <span class="error-message" id="passwordError"></span>
+
+                    </div>
+
+                    <button type="submit" class="login-button">
+                        Log in
+                    </button>
+
+                    <div class="success-message" id="successMessage"></div>
+
+                    <div class="divider">
+                        <span></span>
+                        <p>OR</p>
+                        <span></span>
+                    </div>
+
+                    <button type="button" class="facebook-login" id="facebookLogin">
+                        Log in with Facebook
+                    </button>
+
+                    <button type="button" class="forgot-password" id="forgotPassword">
+                        Forgot password?
+                    </button>
+
+                </form>
+
+            </div>
+
+            <div class="signup-card">
+
+                <p>
+                    Don't have an account?
+                    <a href="#" id="signupLink">Sign up</a>
+                </p>
+
+            </div>
+
+            <div class="get-app">
+
+                <p>Get the app.</p>
+
+                <div class="app-buttons">
+
+                    <a href="#" class="app-button">
+                        <span class="app-icon">▶</span>
+                        <span>
+                            <small>GET IT ON</small>
+                            Google Play
+                        </span>
+                    </a>
+
+                    <a href="#" class="app-button">
+                        <span class="app-icon"></span>
+                        <span>
+                            <small>Download on the</small>
+                            App Store
+                        </span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer-links">
+            <a href="#">Meta</a>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Jobs</a>
+            <a href="#">Help</a>
+            <a href="#">API</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Locations</a>
+            <a href="#">Instagram Lite</a>
+        </div>
+
+        <p>
+            © 2026 Instagram Login UI Project
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

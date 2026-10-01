@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Antenna -->
+  <line x1="50" y1="22" x2="50" y2="12" stroke="#FF9F68" stroke-width="4" stroke-linecap="round" />
+  <circle cx="50" cy="10" r="6" fill="#FFD166" stroke="#FF9F68" stroke-width="2" />
+  
+  <!-- Robot Head Base -->
+  <rect x="20" y="22" width="60" height="52" rx="16" fill="#5BC0EB" stroke="#3AA1CC" stroke-width="3" />
+  
+  <!-- Screen Face -->
+  <rect x="28" y="30" width="44" height="34" rx="10" fill="#182033" />
+  
+  <!-- Friendly Glowing Eyes -->
+  <ellipse cx="40" cy="45" rx="5" ry="6" fill="#65D6B3" />
+  <circle cx="42" cy="43" r="2" fill="#FFFFFF" />
+  
+  <ellipse cx="60" cy="45" rx="5" ry="6" fill="#65D6B3" />
+  <circle cx="62" cy="43" r="2" fill="#FFFFFF" />
+  
+  <!-- Happy Smile / Code Brackets -->
+  <path d="M 45 54 Q 50 58 55 54" stroke="#FFD166" stroke-width="2.5" stroke-linecap="round" fill="none" />
+  
+  <!-- Ears / Headphones -->
+  <rect x="14" y="38" width="6" height="18" rx="3" fill="#9B6DFF" />
+  <rect x="80" y="38" width="6" height="18" rx="3" fill="#9B6DFF" />
+  
+  <!-- Cute Rosy Cheeks -->
+  <circle cx="34" cy="52" r="2.5" fill="#FF7EB6" opacity="0.8" />
+  <circle cx="66" cy="52" r="2.5" fill="#FF7EB6" opacity="0.8" />
+
+  <!-- Little Body Peek -->
+  <path d="M 32 74 L 68 74 L 64 88 L 36 88 Z" fill="#9B6DFF" stroke="#7A4EE0" stroke-width="2.5" />
+  <circle cx="50" cy="81" r="3" fill="#FFD166" />
+</svg>

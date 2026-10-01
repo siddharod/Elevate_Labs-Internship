@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tasky - Cute To-Do List</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Decorative Background -->
+    <div class="bubble bubble-1"></div>
+    <div class="bubble bubble-2"></div>
+    <div class="bubble bubble-3"></div>
+
+
+    <main class="app-container">
+
+        <!-- =========================
+             HEADER
+        ========================== -->
+
+        <header class="header">
+
+            <div class="brand">
+
+                <div class="brand-icon">
+                    <i class="fa-solid fa-list-check"></i>
+                </div>
+
+                <div>
+                    <h1>Tasky</h1>
+                    <p>Make today productive ✨</p>
+                </div>
+
+            </div>
+
+
+            <div class="clock-box">
+
+                <div class="clock-icon">
+                    <i class="fa-regular fa-clock"></i>
+                </div>
+
+                <div>
+                    <strong id="clock">00:00:00</strong>
+                    <span id="date">Loading...</span>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =========================
+             WELCOME CARD
+        ========================== -->
+
+        <section class="welcome-card">
+
+            <div class="welcome-content">
+
+                <span class="small-title">
+                    ✨ YOUR DAILY PLANNER
+                </span>
+
+                <h2>
+                    Let's get things
+                    <span>done!</span>
+                </h2>
+
+                <p>
+                    Organize your day, complete your goals
+                    and keep moving forward.
+                </p>
+
+            </div>
+
+
+            <!-- Cartoon Character -->
+
+            <div class="character">
+
+                <div class="character-body">
+
+                    <div class="eye eye-left"></div>
+                    <div class="eye eye-right"></div>
+
+                    <div class="mouth"></div>
+
+                    <div class="blush blush-left"></div>
+                    <div class="blush blush-right"></div>
+
+                </div>
+
+                <div class="character-feet">
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             STATS
+        ========================== -->
+
+        <section class="stats">
+
+            <div class="stat-card">
+
+                <div class="stat-icon purple">
+                    <i class="fa-solid fa-list"></i>
+                </div>
+
+                <div>
+                    <span>Total Tasks</span>
+                    <strong id="totalTasks">0</strong>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon pink">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+
+                <div>
+                    <span>Completed</span>
+                    <strong id="completedTasks">0</strong>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon yellow">
+                    <i class="fa-solid fa-hourglass-half"></i>
+                </div>
+
+                <div>
+                    <span>Remaining</span>
+                    <strong id="remainingTasks">0</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ADD TASK
+        ========================== -->
+
+        <section class="task-input-card">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-label">
+                        MY TASKS
+                    </span>
+
+                    <h2>What's on your list?</h2>
+                </div>
+
+                <div class="sparkle">
+                    ✦
+                </div>
+
+            </div>
+
+
+            <div class="input-area">
+
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Add a new task..."
+                    maxlength="100"
+                >
+
+                <button id="addTaskBtn">
+                    <i class="fa-solid fa-plus"></i>
+                    Add Task
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             TASK LIST
+        ========================== -->
+
+        <section class="tasks-section">
+
+            <div class="task-list-header">
+
+                <h2>
+                    Today's Tasks
+                </h2>
+
+                <button id="clearCompleted">
+                    Clear Completed
+                </button>
+
+            </div>
+
+
+            <div id="taskList" class="task-list">
+
+                <!-- Tasks are generated by JavaScript -->
+
+                <div id="emptyState" class="empty-state">
+
+                    <div class="empty-icon">
+                        📝
+                    </div>
+
+                    <h3>No tasks yet!</h3>
+
+                    <p>
+                        Add your first task and make
+                        today productive.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             MOTIVATION
+        ========================== -->
+
+        <section class="motivation">
+
+            <div class="motivation-icon">
+                🌷
+            </div>
+
+            <div>
+
+                <h3>Little steps every day!</h3>
+
+                <p>
+                    You don't have to do everything at once.
+                    Just start with one task. 
+                </p>
+
+            </div>
+
+            <div class="stars-decoration">
+                ✦ ✧ ✦
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FOOTER
+        ========================== -->
+
+        <footer>
+
+            <p>
+                Made with  for a more productive day
+            </p>
+
+            <span>
+                Vanilla JavaScript • HTML • CSS
+            </span>
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

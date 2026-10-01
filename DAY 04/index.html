@@ -1,0 +1,1564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GADA Tours & Travels | Explore Beyond Boundaries</title>
+
+    <meta
+        name="description"
+        content="GADA Tours & Travels - Book flights, hotels, holiday packages, trains, buses and cabs."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="top-strip">
+        <div class="container top-strip-inner">
+            <span>🌍 Explore India & The World</span>
+
+            <div class="top-links">
+                <a href="#offers">Offers</a>
+                <a href="#support">Support</a>
+                <span>IN | ₹ INR</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar container">
+
+        <a href="#home" class="logo">
+            <span class="logo-icon">G</span>
+
+            <span class="logo-text">
+                GADA
+                <small>TOURS & TRAVELS</small>
+            </span>
+        </a>
+
+        <nav class="nav-menu" id="navMenu">
+
+            <a href="#home" class="active">Home</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#packages">Packages</a>
+            <a href="#offers">Offers</a>
+            <a href="#contact">Contact</a>
+
+            <button class="login-btn" id="loginBtn">
+                Login / Sign Up
+            </button>
+
+        </nav>
+
+        <button class="menu-toggle" id="menuToggle">
+            ☰
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<main id="home">
+
+<section class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+
+        <div class="hero-heading">
+
+            <span class="eyebrow">
+                ✈️ YOUR JOURNEY STARTS HERE
+            </span>
+
+            <h1>
+                Travel More.<br>
+                <span>Worry Less.</span>
+            </h1>
+
+            <p>
+                Discover beautiful destinations, compare travel options
+                and plan unforgettable journeys with GADA.
+            </p>
+
+        </div>
+
+
+        <!-- ================= BOOKING BOX ================= -->
+
+        <div class="booking-card">
+
+            <div class="booking-tabs">
+
+                <button class="booking-tab active" data-tab="flights">
+                    ✈️ Flights
+                </button>
+
+                <button class="booking-tab" data-tab="hotels">
+                    🏨 Hotels
+                </button>
+
+                <button class="booking-tab" data-tab="holidays">
+                    🏖️ Holidays
+                </button>
+
+                <button class="booking-tab" data-tab="trains">
+                    🚆 Trains
+                </button>
+
+                <button class="booking-tab" data-tab="buses">
+                    🚌 Buses
+                </button>
+
+                <button class="booking-tab" data-tab="cabs">
+                    🚕 Cabs
+                </button>
+
+            </div>
+
+
+            <!-- FLIGHT BOOKING -->
+
+            <div class="booking-content" id="flightBox">
+
+                <div class="trip-types">
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="tripType"
+                            value="oneway"
+                            checked
+                        >
+                        <span>One Way</span>
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="tripType"
+                            value="round"
+                        >
+                        <span>Round Trip</span>
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="tripType"
+                            value="multi"
+                        >
+                        <span>Multi City</span>
+                    </label>
+
+                </div>
+
+
+                <p class="international-note">
+                    ✈️ Book Domestic & International Flights
+                </p>
+
+
+                <div class="flight-search">
+
+                    <div class="search-field">
+
+                        <label>FROM</label>
+
+                        <div class="field-value">
+                            <input
+                                type="text"
+                                id="fromCity"
+                                value="Mumbai"
+                                placeholder="Enter city"
+                            >
+                        </div>
+
+                        <small>India</small>
+
+                    </div>
+
+
+                    <button
+                        class="swap-btn"
+                        id="swapBtn"
+                        title="Swap cities"
+                    >
+                        ⇄
+                    </button>
+
+
+                    <div class="search-field">
+
+                        <label>TO</label>
+
+                        <div class="field-value">
+                            <input
+                                type="text"
+                                id="toCity"
+                                placeholder="Enter destination"
+                            >
+                        </div>
+
+                        <small>Where do you want to go?</small>
+
+                    </div>
+
+
+                    <div class="search-field">
+
+                        <label>DEPARTURE</label>
+
+                        <div class="field-value">
+                            <input
+                                type="date"
+                                id="departureDate"
+                            >
+                        </div>
+
+                        <small>Select travel date</small>
+
+                    </div>
+
+
+                    <div class="search-field return-field">
+
+                        <label>RETURN</label>
+
+                        <div class="field-value">
+                            <input
+                                type="date"
+                                id="returnDate"
+                            >
+                        </div>
+
+                        <small>For better discounts</small>
+
+                    </div>
+
+
+                    <div class="search-field">
+
+                        <label>TRAVELLERS & CLASS</label>
+
+                        <select id="travellers">
+
+                            <option value="1">
+                                1 Traveller • Economy
+                            </option>
+
+                            <option value="2">
+                                2 Travellers • Economy
+                            </option>
+
+                            <option value="3">
+                                3 Travellers • Economy
+                            </option>
+
+                            <option value="4">
+                                4 Travellers • Economy
+                            </option>
+
+                            <option value="1-premium">
+                                1 Traveller • Premium Economy
+                            </option>
+
+                            <option value="1-business">
+                                1 Traveller • Business
+                            </option>
+
+                        </select>
+
+                        <small>Adults & children</small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="fare-section">
+
+                    <span class="fare-title">
+                        Select a Fare Type:
+                    </span>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="fare"
+                            checked
+                        >
+                        Regular
+                    </label>
+
+                    <label>
+                        <input type="radio" name="fare">
+                        Student
+                    </label>
+
+                    <label>
+                        <input type="radio" name="fare">
+                        Senior Citizen
+                    </label>
+
+                    <label>
+                        <input type="radio" name="fare">
+                        Armed Forces
+                    </label>
+
+                </div>
+
+
+                <button class="search-btn" id="flightSearch">
+                    SEARCH FLIGHTS
+                    <span>→</span>
+                </button>
+
+            </div>
+
+
+            <!-- OTHER SERVICES -->
+
+            <div
+                class="service-message"
+                id="serviceMessage"
+            >
+
+                <div class="service-icon" id="serviceIcon">
+                    🏨
+                </div>
+
+                <h3 id="serviceTitle">
+                    Find your perfect stay
+                </h3>
+
+                <p id="serviceText">
+                    Search and discover hotels, resorts and stays
+                    for your next trip.
+                </p>
+
+                <button
+                    class="search-btn"
+                    id="serviceSearch"
+                >
+                    START SEARCHING →
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= QUICK SERVICES ================= -->
+
+<section class="quick-services">
+
+    <div class="container quick-grid">
+
+        <div class="quick-card">
+            <span>✈️</span>
+            <div>
+                <strong>Flight Booking</strong>
+                <small>Domestic & International</small>
+            </div>
+        </div>
+
+        <div class="quick-card">
+            <span>🏨</span>
+            <div>
+                <strong>Hotels</strong>
+                <small>Best stays at great prices</small>
+            </div>
+        </div>
+
+        <div class="quick-card">
+            <span>🏖️</span>
+            <div>
+                <strong>Holiday Packages</strong>
+                <small>Ready-made & custom trips</small>
+            </div>
+        </div>
+
+        <div class="quick-card">
+            <span>🚕</span>
+            <div>
+                <strong>Airport Cabs</strong>
+                <small>Easy transfers</small>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= OFFERS ================= -->
+
+<section class="section offers-section" id="offers">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="section-label">EXCLUSIVE DEALS</span>
+
+                <h2>
+                    Offers Made For
+                    <span>You</span>
+                </h2>
+
+                <p>
+                    Save more on flights, stays and holiday packages.
+                </p>
+            </div>
+
+            <button class="outline-btn">
+                View All Offers →
+            </button>
+
+        </div>
+
+
+        <div class="offers-grid">
+
+            <article class="offer-card offer-blue">
+
+                <div class="offer-content">
+
+                    <span class="offer-tag">
+                        FLIGHT DEAL
+                    </span>
+
+                    <h3>
+                        Fly Across India
+                    </h3>
+
+                    <p>
+                        Explore India's favourite destinations
+                        with flexible travel options.
+                    </p>
+
+                    <button class="offer-btn">
+                        Explore Flights →
+                    </button>
+
+                </div>
+
+                <div class="offer-image">
+                    ✈️
+                </div>
+
+            </article>
+
+
+            <article class="offer-card offer-orange">
+
+                <div class="offer-content">
+
+                    <span class="offer-tag">
+                        HOLIDAY DEAL
+                    </span>
+
+                    <h3>
+                        Escape The Ordinary
+                    </h3>
+
+                    <p>
+                        Discover handpicked domestic and
+                        international holiday experiences.
+                    </p>
+
+                    <button class="offer-btn">
+                        Explore Packages →
+                    </button>
+
+                </div>
+
+                <div class="offer-image">
+                    🌴
+                </div>
+
+            </article>
+
+
+            <article class="offer-card offer-purple">
+
+                <div class="offer-content">
+
+                    <span class="offer-tag">
+                        HOTEL DEAL
+                    </span>
+
+                    <h3>
+                        Stay Somewhere Amazing
+                    </h3>
+
+                    <p>
+                        Find comfortable stays for business,
+                        family and leisure trips.
+                    </p>
+
+                    <button class="offer-btn">
+                        Find Hotels →
+                    </button>
+
+                </div>
+
+                <div class="offer-image">
+                    🏨
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= DESTINATIONS ================= -->
+
+<section class="section destinations-section" id="destinations">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    EXPLORE THE WORLD
+                </span>
+
+                <h2>
+                    Popular
+                    <span>Destinations</span>
+                </h2>
+
+                <p>
+                    From weekend getaways to international adventures.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="destination-tabs">
+
+            <button
+                class="destination-filter active"
+                data-filter="all"
+            >
+                All
+            </button>
+
+            <button
+                class="destination-filter"
+                data-filter="domestic"
+            >
+                🇮🇳 Domestic
+            </button>
+
+            <button
+                class="destination-filter"
+                data-filter="international"
+            >
+                🌎 International
+            </button>
+
+        </div>
+
+
+        <div class="destination-grid">
+
+
+            <!-- DOMESTIC -->
+
+            <article
+                class="destination-card"
+                data-category="domestic"
+            >
+
+                <img
+                    src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=900&q=80"
+                    alt="Goa beach"
+                    loading="lazy"
+                >
+
+                <div class="destination-info">
+
+                    <span>🇮🇳 INDIA</span>
+
+                    <h3>Goa</h3>
+
+                    <p>Beaches • Nightlife • Adventure</p>
+
+                    <button>
+                        Explore →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article
+                class="destination-card"
+                data-category="domestic"
+            >
+
+                <img
+                    src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=900&q=80"
+                    alt="Kerala backwaters"
+                    loading="lazy"
+                >
+
+                <div class="destination-info">
+
+                    <span>🇮🇳 INDIA</span>
+
+                    <h3>Kerala</h3>
+
+                    <p>Backwaters • Nature • Culture</p>
+
+                    <button>
+                        Explore →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article
+                class="destination-card"
+                data-category="domestic"
+            >
+
+                <img
+                    src="https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=900&q=80"
+                    alt="Rajasthan palace"
+                    loading="lazy"
+                >
+
+                <div class="destination-info">
+
+                    <span>🇮🇳 INDIA</span>
+
+                    <h3>Rajasthan</h3>
+
+                    <p>Heritage • Forts • Royalty</p>
+
+                    <button>
+                        Explore →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article
+                class="destination-card"
+                data-category="domestic"
+            >
+
+                <img
+                    src="https://images.unsplash.com/photo-1595815771614-ade9d5d3f3f7?auto=format&fit=crop&w=900&q=80"
+                    alt="Kashmir mountains"
+                    loading="lazy"
+                >
+
+                <div class="destination-info">
+
+                    <span>🇮🇳 INDIA</span>
+
+                    <h3>Kashmir</h3>
+
+                    <p>Mountains • Lakes • Snow</p>
+
+                    <button>
+                        Explore →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- INTERNATIONAL -->
+
+            <article
+                class="destination-card"
+                data-category="international"
+            >
+
+                <img
+                    src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80"
+                    alt="Dubai skyline"
+                    loading="lazy"
+                >
+
+                <div class="destination-info">
+
+                    <span>🌎 INTERNATIONAL</span>
+
+                    <h3>Dubai</h3>
+
+                    <p>Luxury • Shopping • Adventure</p>
+
+                    <button>
+                        Explore →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article
+                class="destination-card"
+                data-category="international"
+            >
+
+                <img
+                    src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=80"
+                    alt="Bali Indonesia"
+                    loading="lazy"
+                >
+
+                <div class="destination-info">
+
+                    <span>🌎 INTERNATIONAL</span>
+
+                    <h3>Bali</h3>
+
+                    <p>Beaches • Temples • Relaxation</p>
+
+                    <button>
+                        Explore →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article
+                class="destination-card"
+                data-category="international"
+            >
+
+                <img
+                    src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=900&q=80"
+                    alt="Singapore skyline"
+                    loading="lazy"
+                >
+
+                <div class="destination-info">
+
+                    <span>🌎 INTERNATIONAL</span>
+
+                    <h3>Singapore</h3>
+
+                    <p>Modern • Family • Experiences</p>
+
+                    <button>
+                        Explore →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article
+                class="destination-card"
+                data-category="international"
+            >
+
+                <img
+                    src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80"
+                    alt="Maldives beach"
+                    loading="lazy"
+                >
+
+                <div class="destination-info">
+
+                    <span>🌎 INTERNATIONAL</span>
+
+                    <h3>Maldives</h3>
+
+                    <p>Islands • Resorts • Romance</p>
+
+                    <button>
+                        Explore →
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= WHY GADA ================= -->
+
+<section class="why-section">
+
+    <div class="container why-grid">
+
+        <div class="why-content">
+
+            <span class="section-label">
+                WHY GADA?
+            </span>
+
+            <h2>
+                Your Trip,
+                <span>Our Responsibility.</span>
+            </h2>
+
+            <p>
+                Planning a journey should be exciting, not stressful.
+                GADA brings your travel essentials together in one
+                simple experience.
+            </p>
+
+
+            <div class="why-points">
+
+                <div class="why-point">
+                    <span>✓</span>
+
+                    <div>
+                        <strong>
+                            Domestic & International
+                        </strong>
+
+                        <p>
+                            Plan trips across India and around the world.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="why-point">
+                    <span>✓</span>
+
+                    <div>
+                        <strong>
+                            Flexible Travel Options
+                        </strong>
+
+                        <p>
+                            Flights, hotels, cabs, trains and packages.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="why-point">
+                    <span>✓</span>
+
+                    <div>
+                        <strong>
+                            Simple Planning
+                        </strong>
+
+                        <p>
+                            Compare your options and build your perfect trip.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="why-visual">
+
+            <div class="passport-card">
+
+                <div class="passport-top">
+                    <span>GADA</span>
+                    <span>TRAVEL PASS</span>
+                </div>
+
+                <div class="passport-plane">
+                    ✈
+                </div>
+
+                <h3>
+                    Make Memories.
+                </h3>
+
+                <p>
+                    Not just itineraries.
+                </p>
+
+                <div class="passport-route">
+                    MUM → THE WORLD
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PACKAGES ================= -->
+
+<section class="section packages-section" id="packages">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span class="section-label">
+                    HANDPICKED FOR YOU
+                </span>
+
+                <h2>
+                    Holiday
+                    <span>Packages</span>
+                </h2>
+
+                <p>
+                    Ready-to-explore journeys for every kind of traveller.
+                </p>
+
+            </div>
+
+            <button class="outline-btn">
+                View All Packages →
+            </button>
+
+        </div>
+
+
+        <div class="package-grid">
+
+            <article class="package-card">
+
+                <div class="package-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1000&q=80"
+                        alt="Kerala holiday"
+                        loading="lazy"
+                    >
+
+                    <span class="package-badge">
+                        POPULAR
+                    </span>
+
+                </div>
+
+                <div class="package-content">
+
+                    <div class="package-location">
+                        🇮🇳 Kerala
+                    </div>
+
+                    <h3>
+                        God's Own Country
+                    </h3>
+
+                    <p>
+                        Backwaters, beaches, greenery and unforgettable
+                        local experiences.
+                    </p>
+
+                    <div class="package-meta">
+                        <span>📅 5 Days / 4 Nights</span>
+                        <span>👥 Customizable</span>
+                    </div>
+
+                    <button class="package-btn">
+                        View Package →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="package-card">
+
+                <div class="package-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1000&q=80"
+                        alt="Dubai holiday"
+                        loading="lazy"
+                    >
+
+                    <span class="package-badge">
+                        INTERNATIONAL
+                    </span>
+
+                </div>
+
+                <div class="package-content">
+
+                    <div class="package-location">
+                        🌎 Dubai
+                    </div>
+
+                    <h3>
+                        Dubai City Escape
+                    </h3>
+
+                    <p>
+                        Experience iconic skylines, desert adventures
+                        and luxury shopping.
+                    </p>
+
+                    <div class="package-meta">
+                        <span>📅 5 Days / 4 Nights</span>
+                        <span>👥 Customizable</span>
+                    </div>
+
+                    <button class="package-btn">
+                        View Package →
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <article class="package-card">
+
+                <div class="package-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1000&q=80"
+                        alt="Bali holiday"
+                        loading="lazy"
+                    >
+
+                    <span class="package-badge">
+                        ROMANTIC
+                    </span>
+
+                </div>
+
+                <div class="package-content">
+
+                    <div class="package-location">
+                        🌎 Bali
+                    </div>
+
+                    <h3>
+                        Bali Island Escape
+                    </h3>
+
+                    <p>
+                        Tropical beaches, peaceful temples and
+                        beautiful island experiences.
+                    </p>
+
+                    <div class="package-meta">
+                        <span>📅 6 Days / 5 Nights</span>
+                        <span>👥 Customizable</span>
+                    </div>
+
+                    <button class="package-btn">
+                        View Package →
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= TRAVEL CATEGORIES ================= -->
+
+<section class="categories-section">
+
+    <div class="container">
+
+        <div class="section-heading centered">
+
+            <span class="section-label">
+                EVERYTHING IN ONE PLACE
+            </span>
+
+            <h2>
+                Plan Every Part
+                <span>Of Your Trip</span>
+            </h2>
+
+        </div>
+
+
+        <div class="category-grid">
+
+            <div class="category-card">
+                <span>✈️</span>
+                <h3>Flights</h3>
+                <p>Domestic & international flights</p>
+            </div>
+
+            <div class="category-card">
+                <span>🏨</span>
+                <h3>Hotels</h3>
+                <p>Hotels, resorts and stays</p>
+            </div>
+
+            <div class="category-card">
+                <span>🚆</span>
+                <h3>Trains</h3>
+                <p>Comfortable rail journeys</p>
+            </div>
+
+            <div class="category-card">
+                <span>🚌</span>
+                <h3>Buses</h3>
+                <p>Intercity bus travel</p>
+            </div>
+
+            <div class="category-card">
+                <span>🚕</span>
+                <h3>Cabs</h3>
+                <p>Airport & local transfers</p>
+            </div>
+
+            <div class="category-card">
+                <span>🛂</span>
+                <h3>Visa Assistance</h3>
+                <p>Guidance for international trips</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact-section" id="contact">
+
+    <div class="container contact-grid">
+
+        <div class="contact-content">
+
+            <span class="section-label">
+                PLAN YOUR NEXT ADVENTURE
+            </span>
+
+            <h2>
+                Tell Us Where
+                <span>You Want To Go.</span>
+            </h2>
+
+            <p>
+                Share your travel requirements and our team can help
+                you plan a journey around your preferences.
+            </p>
+
+
+            <div class="contact-features">
+
+                <div>
+                    <span>🌍</span>
+                    <strong>Domestic & International</strong>
+                </div>
+
+                <div>
+                    <span>🧳</span>
+                    <strong>Personalized Itineraries</strong>
+                </div>
+
+                <div>
+                    <span>💬</span>
+                    <strong>Travel Assistance</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <form class="contact-form" id="contactForm">
+
+            <h3>
+                Request a Travel Plan
+            </h3>
+
+            <p>
+                Fill in your details and we'll get back to you.
+            </p>
+
+
+            <div class="form-row">
+
+                <div class="form-group">
+
+                    <label>
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Your name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="you@example.com"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <div class="form-row">
+
+                <div class="form-group">
+
+                    <label>
+                        Destination
+                    </label>
+
+                    <input
+                        type="text"
+                        id="destination"
+                        placeholder="e.g. Dubai, Goa"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Travellers
+                    </label>
+
+                    <select id="people">
+
+                        <option>1 Traveller</option>
+                        <option>2 Travellers</option>
+                        <option>3 Travellers</option>
+                        <option>4 Travellers</option>
+                        <option>5+ Travellers</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Message
+                </label>
+
+                <textarea
+                    id="message"
+                    rows="4"
+                    placeholder="Tell us about your trip..."
+                ></textarea>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="submit-btn"
+            >
+                REQUEST MY PLAN →
+            </button>
+
+            <div
+                class="form-success"
+                id="formSuccess"
+            >
+                ✓ Your travel request has been received!
+            </div>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FAQ ================= -->
+
+<section class="section faq-section" id="support">
+
+    <div class="container">
+
+        <div class="section-heading centered">
+
+            <span class="section-label">
+                NEED HELP?
+            </span>
+
+            <h2>
+                Frequently Asked
+                <span>Questions</span>
+            </h2>
+
+        </div>
+
+
+        <div class="faq-container">
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    Can I book both domestic and international trips?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    Yes. GADA is designed to help you explore both
+                    domestic destinations across India and international
+                    destinations around the world.
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    Can I customize a holiday package?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    Yes. Packages can be planned around your preferred
+                    destination, duration, activities and travel style.
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    Does the flight search actually book a ticket?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    This internship website currently demonstrates the
+                    booking interface and user interaction. A real booking
+                    system would require airline or travel APIs and a
+                    secure backend.
+                </div>
+
+            </div>
+
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    Is the website mobile responsive?
+                    <span>+</span>
+                </button>
+
+                <div class="faq-answer">
+                    Yes. The website is built using responsive CSS media
+                    queries and adapts to desktop, tablet and mobile
+                    screen sizes.
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+
+            <a href="#home" class="logo footer-logo">
+
+                <span class="logo-icon">G</span>
+
+                <span class="logo-text">
+                    GADA
+                    <small>TOURS & TRAVELS</small>
+                </span>
+
+            </a>
+
+            <p>
+                Making travel planning simpler, smarter and
+                more exciting.
+            </p>
+
+            <div class="socials">
+
+                <a href="#">f</a>
+                <a href="#">◎</a>
+                <a href="#">in</a>
+                <a href="#">𝕏</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Quick Links
+            </h4>
+
+            <a href="#home">Home</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#packages">Packages</a>
+            <a href="#offers">Offers</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Travel
+            </h4>
+
+            <a href="#destinations">Domestic Holidays</a>
+            <a href="#destinations">International Holidays</a>
+            <a href="#packages">Family Trips</a>
+            <a href="#packages">Romantic Getaways</a>
+            <a href="#packages">Adventure Trips</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>
+                Services
+            </h4>
+
+            <a href="#">Flight Booking</a>
+            <a href="#">Hotel Booking</a>
+            <a href="#">Cab Booking</a>
+            <a href="#">Visa Assistance</a>
+            <a href="#">Travel Planning</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="container">
+
+            <span>
+                © <span id="year"></span> GADA Tours & Travels.
+                All rights reserved.
+            </span>
+
+            <span>
+                Internship Project • Responsive Travel Website
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- ================= TOAST ================= -->
+
+<div
+    class="toast"
+    id="toast"
+>
+    <span>✓</span>
+    <p id="toastMessage">
+        Search completed!
+    </p>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
